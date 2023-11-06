@@ -566,7 +566,7 @@ ul li {
   .shape-a:after {
     position: absolute;
     content: "";
-    background: url(../images/shape/02.png);
+    background: url("../images/shape/02.png");
     width: 100px;
     height: 100px;
     background-size: cover;
@@ -593,7 +593,7 @@ ul li {
   .shape-c:after {
     position: absolute;
     content: "";
-    background: url(../images/shape/03.png);
+    background: url("../images/shape/03.png");
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -605,7 +605,7 @@ ul li {
 .page-header {
   padding-top: 210px;
   padding-bottom: 110px;
-  background: url(../images/header/01.jpg);
+  background: url("../images/header/01.jpg");
   background-size: cover;
 }
 @media (min-width: 992px) {
