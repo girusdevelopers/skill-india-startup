@@ -19,7 +19,16 @@
     <link rel="stylesheet" href="assets/css/lightcase.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
+  <style>
+        /* Remove the white background shade from the navigation buttons */
+        .carousel-control-prev,
+        .carousel-control-next {
+          background: transparent;
+          border:none;
+        }
+      </style>
 
 <body>
 
@@ -90,7 +99,7 @@
     <!-- ==========Header Section Ends Here========== -->
 
     <!-- Page Header Section Start Here -->
-    <section class="page-header bg_img padding-tb">
+    <!-- <section class="page-header bg_img padding-tb">
         <div class="overlay"></div>
         <div class="container">
             <div class="page-header-content-area">
@@ -102,26 +111,257 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Page Header Section Ending Here -->
+    <section class="banner-section">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="assets/images/banner/slide-banner.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="100">
+                <img src="assets/images/banner/slide-banner.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1000">
+                <img src="assets/images/banner/slide-banner.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </section>
+     <!-- images -->
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide" style="background: #f0f0f0;">
+                <section class="event-gift-section padding-tb padding-b bg-image">
+                    <div class="container">
+                        <div class="row flex-lg-row-reverse">
+                            <div class="col-lg-6 col-12">
+                                <!-- <div class="section-header">
+                                    <h2>Event Gifts</h2>
+                                    <p>Our Complimentary Gifts For You</p>
+                                </div> -->
+                                <div class="section-wrapper">
+                                    <div class="gift-content">
+                                        <!-- <p>
+                                            It is a long established fact that a reader will be distracted by theing
+                                            readable content of a page when looking at its layout. The point info
+                                            using Lorem Ipsum is that it has a more-or-less
+                                        </p> -->
+                                        <ul class="gift-list">
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Location :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Venue :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Date :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span>Time :</li>
+                                        </ul>
+                                        <div class="register-button">
+                                            <a href="#" class="lab-btn"><span>Book Tickets</span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="image-part">
+                                    <img src="assets/images/gift/01.png" alt="gift-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="swiper-slide" style="background: #e0e0e0;">
+                <section class="event-gift-section padding-tb padding-b bg-image">
+                    <div class="container">
+                        <div class="row flex-lg-row-reverse">
+                            <div class="col-lg-6 col-12">
+                                <!-- <div class="section-header">
+                                    <h2>Event Gifts</h2>
+                                    <p>Our Complimentary Gifts For You</p>
+                                </div> -->
+                                <div class="section-wrapper">
+                                    <div class="gift-content">
+                                        <!-- <p>
+                                            It is a long established fact that a reader will be distracted by theing
+                                            readable content of a page when looking at its layout. The point info
+                                            using Lorem Ipsum is that it has a more-or-less
+                                        </p> -->
+                                        <ul class="gift-list">
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Location :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Venue :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Date :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span>Time :</li>
+                                        </ul>
+                                        <div class="register-button">
+                                            <a href="#" class="lab-btn"><span>Book Tickets</span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="image-part">
+                                    <img src="assets/images/gift/01.png" alt="gift-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="swiper-slide" style="background: #d0d0d0;">
+                <section class="event-gift-section padding-tb padding-b bg-image">
+                    <div class="container">
+                        <div class="row flex-lg-row-reverse">
+                            <div class="col-lg-6 col-12">
+                                <!-- <div class="section-header">
+                                    <h2>Event Gifts</h2>
+                                    <p>Our Complimentary Gifts For You</p>
+                                </div> -->
+                                <div class="section-wrapper">
+                                    <div class="gift-content">
+                                        <!-- <p>
+                                            It is a long established fact that a reader will be distracted by theing
+                                            readable content of a page when looking at its layout. The point info
+                                            using Lorem Ipsum is that it has a more-or-less
+                                        </p> -->
+                                        <ul class="gift-list">
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Location :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Venue :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span> Date :</li>
+                                            <li class="gift-item"><span><i class="fa fa-check-circle" aria-hidden="true"></i>
+                                                </span>Time :</li>
+                                        </ul>
+                                        <div class="register-button">
+                                            <a href="#" class="lab-btn"><span>Book Tickets</span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="image-part">
+                                    <img src="assets/images/gift/01.png" alt="gift-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+     <section class="sponsor-section padding-tb padding-b bg-image">
+        <div class="container">
+        <div class="section-header">
+          <h2>Event Sponsors</h2>
+          <p>Check Who Makes The Event Possible</p>
+        </div>
+        <div class="section-wrapper text-center shape-b">
+          <div class="all-sponsor">
+            <div class="platinum-sponsor">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/01.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/02.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/03.png" alt="sponsor" />
+                </div>
+              </div>
+            </div>
+            <div class="gold-sponsor">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/04.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/05.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/06.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/07.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/08.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/09.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/10.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/11.png" alt="sponsor" />
+                </div>
+              </div>
+            </div>
+            <div class="silver-sponsor">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/12.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/13.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/14.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/15.png" alt="sponsor" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/sponsor/16.png" alt="sponsor" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="registration.html" class="lab-btn"><span> Become a Sponsor </span></a>
+        </div>
+      </div>
+     </section>
 
     <!-- Registration section start Here -->
-     <div class="login-section padding-tb">
+   
+    <!-- <div class="login-section padding-tb">
         <div class="container">
             <div class="account-wrapper">
-                <h3 class="title">Become a Sponsor</h3>
+                <h3 class="title">Register Now</h3>
                 <form class="account-form">
                     <div class="form-group">
                         <input type="text" placeholder="User Name" name="username">
                     </div>
                     <div class="form-group">
-                        <input type="number" placeholder="phone number" name="phonenumber">
+                        <input type="number" placeholder="phone number" name="email">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="company name" name="CompanyName">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Designation" name="Designation">
+                        <input type="text" placeholder="company name" name="email">
                     </div>
                     <div class="form-group">
                         <label for="formFile" class="form-label">Upload company Logo</label>
@@ -138,7 +378,7 @@
                     <div class="form-group">
                         <button class="d-block lab-btn"><span>Submit</span></button>
                     </div>
-                </form>
+                </form> -->
                 <!-- <div class="account-bottom">
                     <span class="d-block cate pt-10">Are you a member? <a href="login.html">Login</a></span>
                     <span class="or" style="text-align: center;"><span>or</span></span>
@@ -161,9 +401,9 @@
                         </li>
                     </ul>
                 </div> -->
-            </div>
+            <!-- </div>
         </div>
-    </div>
+    </div> -->
     <!-- Registration section end Here -->
 
     <!-- Footer Section start here -->
@@ -332,6 +572,15 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/lightcase.js"></script>
     <script src="assets/js/functions.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </body>
 
 </html>
