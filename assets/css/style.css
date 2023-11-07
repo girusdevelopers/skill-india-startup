@@ -5021,6 +5021,35 @@ footer a {
 footer .footer-top .footer-top-item {
   padding: 15px;
 }
+.email{
+  width: 450px;
+}
+.tickets{
+  align-items: center;
+  border: 1px solid white;
+  width: 800px;
+
+}
+
+.terms{
+  display: flex;
+  gap: 40px;
+}
+.choose{
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.quan{
+  display: flex;
+  gap: 10px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+.pur{
+  margin-left: 150px;
+  margin-top: 30px;
+}
 @media (min-width: 1200px) {
   footer .footer-top .footer-top-item {
     padding: 40px 20px;
