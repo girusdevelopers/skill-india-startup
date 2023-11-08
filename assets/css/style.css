@@ -2512,7 +2512,7 @@ ul li {
   filter: drop-shadow(0 5px 0 white);
 }
 .blink{
-  animation: blink 5.5s linear infinite;
+  animation: blink 1.5s linear infinite;
   color: orange;
   font-size:20px
 }
@@ -3186,7 +3186,7 @@ ul li {
   box-shadow: 4px 4px 0 0 currentColor;
 }
 .lab-btn span {
-  color: #ffa441;
+  color: #113e81;
 }
 .lab-btn:hover {
   box-shadow: none;
