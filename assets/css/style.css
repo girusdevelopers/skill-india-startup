@@ -2511,6 +2511,23 @@ ul li {
 .pricing-item:hover .pricing-inner .pricing-header {
   filter: drop-shadow(0 5px 0 white);
 }
+.blink{
+  animation: blink 5.5s linear infinite;
+  color: orange;
+  font-size:20px
+}
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
 
 .news-item .news-inner {
   box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
@@ -4453,6 +4470,15 @@ ul li {
   .sponsor-section .all-sponsor .silver-sponsor {
     padding: 50px;
   }
+}
+.platinum-sponsor h4{
+  text-shadow: 2px 2px 0 #ffa441;
+}
+.gold-sponsor h4{
+  text-shadow: 2px 2px 0 #ffa441;
+}
+.silver-sponsor h4{
+  text-shadow: 2px 2px 0 #ffa441;
 }
 .sponsor-section .lab-btn {
   margin-top: 60px;
