@@ -698,7 +698,7 @@ footer
 .speaker-item .speaker-inner,
 .page-header .page-header-content-area ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .scholar-single-section .section-wrapper .section-inner,
@@ -1699,6 +1699,10 @@ img {
   height: auto;
   max-width: 100%;
 }
+image-part{
+  margin-top: 30px;
+
+}
 
 @media (min-width: 576px) {
   h1 {
@@ -2469,7 +2473,9 @@ ul li {
   font-family: "Arvo", serif;
 }
 .pricing-item .pricing-inner .pricing-content .get-ticket a ul li.vat {
-  align-items: flex-end;
+      display: flex;
+    /* margin-right: -44px; */
+    flex-direction: column;
 }
 .pricing-item .pricing-inner .pricing-content .get-ticket a ul li.vat h4 {
   color: #ffa441 !important;
