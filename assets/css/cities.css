@@ -1,0 +1,55 @@
+/* #cities */
+.slideshow-container {
+  overflow: hidden;
+  width: 100%; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  position: relative;
+  
+
+}
+
+.slides {
+  display: flex;
+  animation: slide 10s linear infinite;
+  width: 15vw;
+  gap: 30px;
+ 
+}
+
+.slide {
+  width: 150px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  margin: 20px;
+  float: left;
+  shape-outside: ellipse(20% 50%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%); /* Adjust to the width of a single image */
+  }
+}
+.icon {
+  display: inline-block;
+  width: 20px; /* Adjust width as needed */
+  text-align: center;
+  margin-right: 10px;
+  font-size: 20px;
+ }
+  .item-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.item-list li {
+  margin-bottom: 10px;
+  display: flex;
+  
+
+  
+}
