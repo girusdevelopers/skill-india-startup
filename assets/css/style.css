@@ -1699,10 +1699,6 @@ img {
   height: auto;
   max-width: 100%;
 }
-image-part{
-  margin-top: 30px;
-
-}
 
 @media (min-width: 576px) {
   h1 {
