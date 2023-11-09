@@ -3942,7 +3942,7 @@ ul li {
   width: 280px;
   background: #00163f;
   border-radius: 4px;
-  box-shadow: 0 0 10px 2px rgba(223, 1, 174, 0.2);
+  box-shadow: 0 0 10px 2px #ffa441;
   transform: translateX(-30px);
   opacity: 0;
   visibility: hidden;
@@ -3955,7 +3955,7 @@ ul li {
   .cart-content
   .cart-list
   .cart-item {
-  background: rgba(223, 1, 174, 0.6);
+  background: #ffa441;
 }
 .header-wrapper
   .menu-area
@@ -4185,7 +4185,7 @@ ul li {
     color: #fff;
   }
   .menu li a:hover {
-    background: rgba(223, 1, 174, 0.6);
+    background: #ffa441;
   }
   .menu li .submenu {
     padding-left: 20px;
@@ -4378,7 +4378,8 @@ ul li {
   .count-text {
   background: #fff;
   font-family: "Arvo", serif;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 500;
   color: #00163f !important;
   padding: 0.5rem 0.7rem;
   margin-bottom: 0;
@@ -7556,3 +7557,74 @@ footer .footer-bottom .footer-bottom-content p a {
 /*Footer section End here*/
 
 /*# sourceMappingURL=style.css.map */
+/* Hello World */
+
+.wt-model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: none; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+.active {
+  display: flex;
+}
+
+.wt-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #ffffff2f;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wt-model .wt-inner {
+  position: absolute;
+
+  background-color: rgba(37, 41, 74, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 32px;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 250px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gradient border */
+  border: 4px solid #FFA441;
+  outline: 6px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px #FFA441;
+}
+
+.wt-model .wt-inner .wt-content {
+  display: flex;
+  flex-direction: column;
+}
+.wt-model .wt-inner .wt-content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* color: #333; */
+  margin-top: 10px;
+}
+.wt-model .wt-inner .wt-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  /* color: #333; */
+}
