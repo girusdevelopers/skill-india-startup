@@ -4324,12 +4324,12 @@ ul li {
   background-size: cover;
 }
 .banner-section .banner-wrapper {
-  padding-top: 150px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 @media (min-width: 992px) {
   .banner-section .banner-wrapper {
-    padding-top: 250px;
+    padding-top: 50px;
     padding-bottom: 85px;
   }
 }
