@@ -1791,6 +1791,11 @@ ul li {
   margin-top: -10px;
   z-index: 9 !important;
 }
+.section-header h3{
+  text-shadow: 2px 2px 0 #ffa441;
+  margin-top: -10px;
+  z-index: 9 !important;
+}
 .section-header h2:after {
   width: 210px;
   height: 210px;
