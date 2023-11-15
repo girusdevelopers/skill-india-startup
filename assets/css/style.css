@@ -7796,7 +7796,8 @@ footer .footer-bottom .footer-bottom-content p a {
 
   background-color: rgba(37, 41, 74, 0.8);
   backdrop-filter: blur(10px);
-  padding: 32px;
+  padding-bottom: 10px;
+  /* padding: 32px; */
   border-radius: 10px;
   width: 500px;
   min-height: 250px;
@@ -7805,8 +7806,8 @@ footer .footer-bottom .footer-bottom-content p a {
   align-items: center;
   justify-content: center;
   /* gradient border */
-  border: 4px solid #FFA441;
-  outline: 6px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid #FFA441;
+  outline: 2px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 10px #FFA441;
 }
 
