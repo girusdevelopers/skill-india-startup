@@ -28,6 +28,26 @@
 
 <body>
 
+    <div id="wt-pre-model" class="wt-model">
+        <div class="wt-inner">
+          <!-- close button  -->
+          <div class="wt-close-btn">
+            <i class="icofont-close"></i>
+          </div>
+          <div class="wt-content text-center">
+            <img src="assets/images/banner/slide-banerrr.png" alt="">
+            <div class="mt-2">
+              <a href="purchase-ticket.html" style="border: 2px solid #ffa441;
+              padding: 10px;
+              border-radius: 5px;">
+                <span>Purchase Ticket</span>
+            </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
     <!-- preloader start here -->
     <div class="preloader">
         <div class="preloader-inner">
@@ -664,6 +684,24 @@
                 });
             }
         });
+
+
+        $('#wt-pre-model')
+      .delay(10)
+      .animate(
+        {
+          opacity: '1',
+          transform: 'scale(1)',
+        },
+        500,
+        function () {
+          $('#wt-pre-model').css('display', 'flex');
+        }
+      );
+    $('.wt-close-btn').click(function () {
+      $('#wt-pre-model').css('display', 'none');
+    });
+
     </script>
 </body>
 

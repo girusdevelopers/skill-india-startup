@@ -5,65 +5,98 @@
     <title>Skill India Startup Meet</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  
     <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/images/x-icon/01.png"
-    />
-
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/01.png" />
+  
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/icofont.min.css" />
     <link rel="stylesheet" href="assets/css/lightcase.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
-
-<body>
-
-    <!-- preloader start here -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
+  </head>
+  
+  <style>
+    /* Remove the white background shade from the navigation buttons */
+    .carousel-control-prev,
+    .carousel-control-next {
+      background: transparent;
+      border: none;
+    }
+  </style>
+  
+  
+  
+  
+  
+  
+  <body>
+  
+  
+      <div id="wt-pre-model" class="wt-model">
+        <div class="wt-inner">
+          <!-- close button  -->
+          <div class="wt-close-btn">
+            <i class="icofont-close"></i>
+          </div>
+          <div class="wt-content text-center">
+            <img src="assets/images/banner/slide-banerrr.png" alt="">
+            <div class="mt-2">
+              <a href="purchase-ticket.html" style="border: 2px solid #ffa441;
+              padding: 10px;
+              border-radius: 5px;">
+                <span>Purchase Ticket</span>
+            </a>
             </div>
+          </div>
+          
         </div>
+      </div>
+      <!-- s
+  
+  
+  
+      <!preloader start here -->
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-icon">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
     <!-- preloader ending here -->
-
-
+  
     <!-- ==========Header Section Starts Here========== -->
     <header class="header-section">
-        <div class="header-bottom">
-          <div class="container">
-            <div class="header-wrapper">
-              <div class="logo">
-                <a href="index.html">
-                  <img src="assets/images/logo/01.png" alt="logo" />
-                </a>
-              </div>
-              <div class="menu-area">
-                <ul class="menu">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/images/logo/01.png" alt="logo" />
+              </a>
+            </div>
+            <div class="menu-area">
+              <ul class="menu">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
   
                               <li>
                                   <a href="#">Events</a>
                                   <ul class="submenu">
-                                      <li><a href="ongoing.html">Ongoing events</a></li>
+                                      <li><a href="ongoingevent.html">Ongoing events</a></li>
                                       <li><a href="upcomingevent.html">Upcoming events</a></li>
                                   </ul>
                               </li>
                               <li>
                                   <a href="eventsponsors.html">Sponsors</a>
-                    
+                                 
                               </li>
                               <li>
-                                  <a href="contact.html">Contact us</a>
+                                  <a href="contact.html">Contact Us</a>
                               </li>
                               <!-- <li><a href="contact.html">Contacts</a></li> -->
                           </ul>
@@ -76,17 +109,17 @@
                           </a>
                           </div>
   
-                <!-- toggle icons -->
-                <div class="header-bar d-lg-none">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+              <!-- toggle icons -->
+              <div class="header-bar d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
     <!-- ==========Header Section Ends Here========== -->
 
     <!-- Page Header Section Start Here -->
@@ -124,18 +157,18 @@
                                     <form action="">
                                         <div class="row g-3 mb-4">
                                             <div class="col">
-                                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                              <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
                                             </div>
                                             <div class="col">
-                                              <input type="email" class="form-control" placeholder="email" aria-label="email">
+                                              <input type="email" class="form-control" placeholder="Email" aria-label="email">
                                             </div>
                                           </div>
                                           <div class="row g-3 mb-4">
                                             <div class="col">
-                                              <input type="number" class="form-control" placeholder="number" aria-label="number">
+                                              <input type="number" class="form-control" placeholder="Phone Number" aria-label="number">
                                             </div>
                                             <div class="col">
-                                              <input type="text" class="form-control" placeholder="subject" aria-label="subject">
+                                              <input type="text" class="form-control" placeholder="Subject" aria-label="subject">
                                             </div>
                                           </div>
                                           <div class="mb-4">
@@ -304,6 +337,23 @@
         });
     }
 });
+
+
+$('#wt-pre-model')
+      .delay(10)
+      .animate(
+        {
+          opacity: '1',
+          transform: 'scale(1)',
+        },
+        500,
+        function () {
+          $('#wt-pre-model').css('display', 'flex');
+        }
+      );
+    $('.wt-close-btn').click(function () {
+      $('#wt-pre-model').css('display', 'none');
+    });
 
           </script>
          
