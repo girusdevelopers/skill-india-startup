@@ -28,6 +28,23 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .quantity {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="number"] {
+      width: 40px;
+      text-align: center;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    </style>
   </head>
 
   <body>
@@ -159,13 +176,14 @@
                 Startup Pitching+Platinum Delegate
               </option>
             </select>
-            <div class="mb-3 mt-3">
-              <input
-                type="number"
-                class="form-control"
-                id="count"
-                placeholder="Count"
-              />
+            <div class="quantity mt-3">
+              
+                <label for="quantity-input" style="padding-right: 10px;">No. of tickets:</label>
+              
+              
+             
+              <input type="number" id="quantity" value="1">
+              
             </div>
             <input type="hidden" id="amount" name="amount" />
             <input type="hidden" id="gst" name="GST" />
@@ -214,19 +232,6 @@
     <!-- Registration section end Here -->
 
     <!-- Footer Section start here -->
-<<<<<<< HEAD
-    <footer
-      class="footer-section"
-      style="background-image: url(assets/images/bg-images/footer-bg.png)"
-    >
-      <div class="col-12" style="text-align: center">
-        <img
-          class="rounded footer-abt-img mb-2"
-          style="padding-top: 40px"
-          src="assets/images/logo/01.png"
-          alt="about-image"
-        />
-=======
     <footer class="footer-section" style="background-image: url(assets/images/bg-images/footer-bg.png);">
         <div class="col-12" style="text-align: center;"><img class="rounded footer-abt-img mb-2" style = "padding-top:40px" src="assets/images/logo/01.png"
           alt="about-image"></div>
@@ -310,7 +315,6 @@
                  
               </div>
           </div>
->>>>>>> 7e504cd521eda030aefdcbac501f6a2aaf80fead
       </div>
       <div class="footer-middle padding-tb">
         <div class="container">
@@ -550,6 +554,12 @@
             console.error("Fetch error:", error);
           });
       });
+
+
+
+
+
+    
     </script>
   </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Style the quantity button */
+    .quantity {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="number"] {
+      width: 40px;
+      text-align: center;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Quantity Button</title>
+</head>
+<body>
+
+<div class="quantity">
+  <button onclick="decreaseQuantity()">-</button>
+  <input type="number" id="quantity" value="1">
+  <button onclick="increaseQuantity()">+</button>
+</div>
+
+<script>
+  function increaseQuantity() {
+    var quantityInput = document.getElementById('quantity');
+    var currentQuantity = parseInt(quantityInput.value, 10);
+    quantityInput.value = currentQuantity + 1;
+  }
+
+  function decreaseQuantity() {
+    var quantityInput = document.getElementById('quantity');
+    var currentQuantity = parseInt(quantityInput.value, 10);
+
+    // Ensure quantity doesn't go below 1
+    if (currentQuantity > 1) {
+      quantityInput.value = currentQuantity - 1;
+    }
+  }
+</script>
+
+</body>
+</html>

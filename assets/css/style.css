@@ -4099,6 +4099,10 @@ ul li {
   .header-wrapper .logo {
     width: 160px;
   }
+  .menu.active{
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 1199px) and (min-width: 992px) {
   .header-wrapper .logo {
