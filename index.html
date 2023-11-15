@@ -36,6 +36,72 @@
 
    
   <body>
+
+
+    <div id="wt-pre-model" class="wt-model">
+      <div class="wt-inner">
+        <!-- close button  -->
+        <div class="wt-close-btn">
+          <i class="icofont-close"></i>
+        </div>
+        <div class="wt-content text-center">
+          <form action="https://formsubmit.co/manojgirus@gmail.com "target="_blank" method="POST" style="text-align: center;">
+            <div class="row g-3 mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Full Name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Mobile number" aria-label="designation">
+                </div>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Company name" aria-label="CompanyName">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Designation" aria-label="">
+                </div>
+              </div>
+              <div class="col mb-3" >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Type of Industry</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+              <div class="about-btn-grp">
+                <a href="popup-form.html" target="_blank" "lab-btn" type="submit"
+                  ><span>Submit</span>
+                </a>
+
+              </div>
+
+
+
+
+
+
+        </form>
+        </div>
+      </div>
+    </div>
+    <!-- s
+
+
+
     <!-- preloader start here -->
     <div class="preloader">
       <div class="preloader-inner">
@@ -64,7 +130,7 @@
                 </li>
 
                             <li>
-                                <a href="#0">Events</a>
+                                <a href="#">Events</a>
                                 <ul class="submenu">
                                     <li><a href="ongoingevent.html">Ongoing events</a></li>
                                     <li><a href="upcomingevent.html">Upcoming events</a></li>
@@ -146,15 +212,15 @@
                                 </li>
 
                                 <li class="clock-item"><span class="count-number hours">16</span>
-                                    <p class="count-text">Hour</p>
+                                    <p class="count-text">Hours</p>
                                 </li>
 
                                 <li class="clock-item"><span class="count-number minutes">25</span>
-                                    <p class="count-text">Min</p>
+                                    <p class="count-text">Mins</p>
                                 </li>
 
                                 <li class="clock-item"><span class="count-number seconds">19</span>
-                                    <p class="count-text">Sec</p>
+                                    <p class="count-text">Secs</p>
                                 </li>
                             </ul>
 
@@ -163,7 +229,7 @@
                            
                             <p>Join Our International Family Today! Please
                                 Call us For More info.</p>
-                            <a href="registration.html" class="lab-btn"><span>Purchase Ticket</span> </a>
+                            <a href="registration.html" class="lab-btn"><span>Purchase Ti</span> </a>
                             <div class="event-sponsored">
                                 <p>Event Organized By:</p>
                                 <img src="assets/images/banner/girus-logo.png" alt="sponsor">
@@ -2509,7 +2575,7 @@
                                       </li>
                                       <li class="facility-item">
                                           <span><i class="fa fa-check-circle" aria-hidden="true"></i>
-                                          </span> <span style="text-decoration: line-through;">No Lunch</span>
+                                          </span>No Lunch</span>
                                       </li>
                                       <li class="facility-item">
                                           <span><i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -2517,7 +2583,7 @@
                                       </li>
                                       <li class="facility-item">
                                           <span><i class="fa fa-check-circle" aria-hidden="true"></i>
-                                          </span><span style="text-decoration: line-through;">No Access to SISS Mainstage</span>
+                                          </span>No Access to SISS Mainstage
                                       </li>
                                   </ul>
                                   <div class="get-ticket">
@@ -2687,9 +2753,11 @@
                               <h5>CONTACT US</h5>
                           </div>
                           <div class="fm-item-content">
-                              <p>phone : +91 98499 47327</p>
-                              <p>email : info@skillindiastartups.in</p>
-                              <p>address : Sardar Patel Rd, above Pantloons, Prakash Nagar, Begumpet, Hyderabad, Telangana 500016</p>
+                              <a href="tel:+919849947327">phone : +91 98499 47327</a>
+
+                              <a href="mailto:info@skillindiastartups.in?subject=Subject%20Text&body=Body%20Text">Email : info@skillindiastartups.in</a>
+
+                              <p>address : Sardar Patel Rd, above Pantaloons, Prakash Nagar, Begumpet, Hyderabad, Telangana 500016</p>
                              
                           </div>
                       </div>
@@ -2793,6 +2861,22 @@
         });
     }
 });
+
+$('#wt-pre-model')
+      .delay(10)
+      .animate(
+        {
+          opacity: '1',
+          transform: 'scale(1)',
+        },
+        500,
+        function () {
+          $('#wt-pre-model').css('display', 'flex');
+        }
+      );
+    $('.wt-close-btn').click(function () {
+      $('#wt-pre-model').css('display', 'none');
+    });
 
 
 
